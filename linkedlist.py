@@ -16,7 +16,7 @@ class doubly_linked_list:
             self.tail = node
             return
         
-        self.insert_before(self.hode,node)
+        self.insert_before(self.head,node)
 
     # O(1) Time | O(1) Space
     def set_tail(self,node):
