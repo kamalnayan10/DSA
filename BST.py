@@ -14,6 +14,8 @@ class BST:
         self.left = None
         self.right = None
 
+    # AVERAGE: O(log(N)) time | O(1) space
+    # WORST: O(N) time | O(1) space
     def insert(self, value):
         # Write your code here.
         # Do not edit the return statement of this method.
@@ -33,6 +35,8 @@ class BST:
                     cur_node = cur_node.right
         return self
 
+    # AVERAGE: O(log(N)) time | O(1) space
+    # WORST: O(N) time | O(1) space
     def contains(self, value):
         # Write your code here.
         cur_node = self
@@ -45,6 +49,8 @@ class BST:
                 return True
         return False
 
+    # AVERAGE: O(log(N)) time | O(1) space
+    # WORST: O(N) time | O(1) space
     def remove(self , value:int , parentNode = None):
         cur_node = self
 
